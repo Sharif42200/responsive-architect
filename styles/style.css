@@ -38,7 +38,7 @@
 /* Banner styles */
 .banner {
     text-align: center;
-    margin-top: 70px;
+    margin-top: 50px;
     margin-left: 300px;
     margin-right: 300px;
 }
@@ -57,7 +57,7 @@
     margin-bottom: 30px;
 }
 
-.banner-button{
+.banner-button {
     padding: 20px 24px;
     border-radius: 5px;
     border-style: none;
@@ -65,28 +65,188 @@
     background-color: #FF900E;
     margin-bottom: 40px;
 }
-img{
+
+img {
     /* margin-left: 240px; */
     /* margin-right: 240px; */
     width: 100%;
+    margin-bottom: 40px;
 }
 
+/* feature styles */
 
+main {
+    margin-top: 50px;
+}
 
+.feature {
+    margin-left: 300px;
+    /* height: 350px;
+    width: 350px; */
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
 
+}
 
+.split {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    border-radius: 10px;
+    margin-right: 100px;
+    transition: transform 5s;
+}
 
+.split img:hover {
+    /* height: 100px;
+    width: 200px; */
+    transform: rotate(90deg);
+}
+
+.quick-list {
+    margin-top: 100px;
+    margin-right: 150px;
+}
+
+.quick-title {
+    font-weight: 500;
+    font-size: 45px;
+    color: #727272;
+}
+
+#one {
+    font-weight: 700;
+    color: #131313;
+}
+
+#two {
+    font-weight: 700;
+    color: #FF900E;
+}
+
+.quick-description {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
+
+.quick-button {
+    margin-top: 30px;
+    padding: 20px 25px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #FF900E;
+    border-radius: 10px;
+    border-style: none;
+}
+
+/* experience styles */
+
+.experience {
+    margin-right: 180px;
+    margin-left: 180px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+.box{
+    /* margin-left: -20px; */
+    margin-bottom: -100px;
+    border: 1px solid #FF900E;
+    border-style: none;
+    border-radius: 5px;
+    width: 5px;
+    height: 100px;
+    background-color: #FF900E;
+}
+.exprience-title {
+    margin-right: 100px;
+}
+
+.exp-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.exp-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 30px;
+}
+
+.sub-title {
+    border: 2px solid white;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px #f0ebeb;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.sub-title h3 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #131313;
+}
+
+.sub-title p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
+.exprience-img{
+    position: relative;
+    /* top: 75px; */
+    z-index: 1;
+}
+.experience-button{
+    position: relative;
+    top: -110px;
+    left: -55px;
+    z-index: 2;
+}
+.experience-button {
+    font-weight: 500;
+    font-size: 25px;
+    color: #FFFFFF;
+    padding: 20px 25px;
+    background-color: #FF900E;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.experience-button span {
+    font-weight: 700;
+    font-size: 55px;
+}
 
 
 /* Responsive section */
 @media screen and (max-width: 576px) {
-    .nav-bar, .bar
-    {
-        grid-template-columns: repeat(1, 1fr);
+    .title {
+        font-size: 30px;
+        margin: 20px;
     }
-    .bar
-    {
+
+    .nav-bar,
+    .bar {
+        grid-template-columns: repeat(1, 1fr);
+        /* padding: 0; */
+    }
+
+    .bar {
         /* grid-template-columns: repeat(1, 1fr); */
         margin-bottom: 20px;
+    }
+
+    .banner-img {
+        width: 100%;
+        margin-bottom: 40px;
     }
 }
